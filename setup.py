@@ -36,6 +36,7 @@ chromedriver_checksums = None
 def get_chromedriver_version():
     """Retrieves the most recent chromedriver version."""
     global chromedriver_version
+    return "2.37"
 
     response = request.urlopen(CHROMEDRIVER_INFO_URL)
     content = response.read()
